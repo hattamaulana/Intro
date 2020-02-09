@@ -1,19 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_main"
+        android:id="@+id/snowboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_intro"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/secondary_text_light"
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-1dp"
+        android:src="@drawable/img_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txt_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="32dp"
+        android:text="Riders \nTalked, and \nwe listened"
+        android:textSize="36sp"
+        android:fontFamily="@font/gilroy_light"
+        app:layout_constraintTop_toBottomOf="@id/snowboard"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintStart_toStartOf="@id/snowboard"
+        app:layout_constraintEnd_toStartOf="@id/img_launcher" />
+
+    <View
+        android:id="@+id/dot"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_button_circle"
+        app:layout_constraintTop_toBottomOf="@id/txt_intro"
+        app:layout_constraintStart_toStartOf="@id/txt_intro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/geometric"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="28sp"
+        android:fontFamily="@font/gilroy_extrabold"
+        app:layout_constraintTop_toBottomOf="@id/dot"
+        app:layout_constraintStart_toStartOf="@id/dot" />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right"
+        android:background="@drawable/bg_button_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/view_collection"
+        android:textSize="18sp"
+        android:textColor="@android:color/secondary_text_light"
+        android:fontFamily="@font/gilroy_extrabold"
+        app:layout_constraintStart_toEndOf="@id/btn_next"
+        app:layout_constraintBottom_toBottomOf="@id/btn_next"
+        app:layout_constraintTop_toTopOf="@id/btn_next" />
 </androidx.constraintlayout.widget.ConstraintLayout>
