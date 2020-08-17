@@ -1,3 +1,3 @@
 ## Screenshot
 
-![](capture/ss.png)
+![](/capture/ss.png)
