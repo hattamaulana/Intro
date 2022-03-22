@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B579D727EA0C0000EC31D2 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B579D627EA0C0000EC31D2 /* RoundedImageView.swift */; };
 		45D0E59327E6F6A5003B890A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0E59227E6F6A5003B890A /* AppDelegate.swift */; };
 		45D0E59527E6F6A5003B890A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0E59427E6F6A5003B890A /* SceneDelegate.swift */; };
 		45D0E59727E6F6A5003B890A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0E59627E6F6A5003B890A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45B579D627EA0C0000EC31D2 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		45D0E58F27E6F6A5003B890A /* intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D0E59227E6F6A5003B890A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D0E59427E6F6A5003B890A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				45D0E59B27E6F6A6003B890A /* Assets.xcassets */,
 				45D0E59D27E6F6A6003B890A /* LaunchScreen.storyboard */,
 				45D0E5A027E6F6A6003B890A /* Info.plist */,
+				45B579D627EA0C0000EC31D2 /* RoundedImageView.swift */,
 			);
 			path = intro;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B579D727EA0C0000EC31D2 /* RoundedImageView.swift in Sources */,
 				45D0E59727E6F6A5003B890A /* ViewController.swift in Sources */,
 				45D0E59327E6F6A5003B890A /* AppDelegate.swift in Sources */,
 				45D0E59527E6F6A5003B890A /* SceneDelegate.swift in Sources */,
